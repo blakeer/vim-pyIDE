@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # for ycm
-yum install -y gcc gcc-c++ kernel-devel cmake golang
+yum install -y gcc gcc-c++ kernel-devel cmake golang python-pip ncurses-devel
 
 sudo yum -y remove vim
 
-cd ~ && rm -rf vim && git clone git@github.com:vim/vim.git && cd vim
+cd ~ && rm -rf vim && git clone http://github.com/vim/vim.git && cd vim
 ./configure --with-features=huge \
             --enable-multibyte \
             --enable-pythoninterp \
@@ -16,3 +16,4 @@ cd ~ && rm -rf vim && git clone git@github.com:vim/vim.git && cd vim
             --enable-gui=gtk2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
 sudo make install
+ln -sf /usr/local/bin/vim /usr/bin/vim
