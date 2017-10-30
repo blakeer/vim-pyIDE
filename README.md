@@ -11,4 +11,4 @@ https://github.com/TTWShell/legolas-vim.git
 6. [http://vim.wikia.com/wiki/Search_and_replace](http://vim.wikia.com/wiki/Search_and_replace)
 7. [http://vim.wikia.com/wiki/Search_and_replace_in_multiple_buffers](http://vim.wikia.com/wiki/Search_and_replace_in_multiple_buffers)
 
-cd ~ && rm -rf legolas-vim && git clone https://github.com/blakeer/vim-pyIDE.git && cd legolas-vim && bash install.sh INIT
+cd ~ && rm -rf vim-pyIDE && git clone https://github.com/blakeer/vim-pyIDE.git && cd vim-pyIDE && bash install.sh INIT
